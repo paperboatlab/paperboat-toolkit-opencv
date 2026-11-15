@@ -25,6 +25,16 @@ jobs:
         run: cmake -S paperboat/engine -B paperboat/engine/build -G Ninja -DCMAKE_BUILD_TYPE=Debug
       - name: Build
         run: cmake --build paperboat/engine/build
+      # The toolkit's docs site, as the org site (paperboatlab.github.io) builds it: its pages, and a
+      # page per block from the catalog this build dumps. Warnings are errors.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Docs
+        run: |
+          pip install sphinx shibuya
+          python3 paperboat/docs/site/build.py engine/toolkit/opencv/docs "$RUNNER_TEMP/docs" --name toolkits/opencv \
+            --engine paperboat/engine/build/tools/paperboat-catalog --blocks engine/toolkit/opencv/src/opencv
 
       - name: Check the examples are discovered
         run: |
