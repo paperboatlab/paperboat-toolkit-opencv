@@ -22,3 +22,8 @@ The `build` job checks out the public paperboat engine (`dev`), builds this tool
 `ocv-01`. The `plugin` job installs paperboat as a release would be and runs
 `paperboat toolkit install opencv --path .` against it: the toolkit as a plugin, then `ocv-01` against the SDK.
 The engine's `engine/tests/opencv_test.cpp` covers the stages with synthetic Mats.
+
+## Licence
+
+GNU General Public License version 3 (see [LICENSE](LICENSE)). Installed by the user and never
+bundled into a Paperboat release artifact.
