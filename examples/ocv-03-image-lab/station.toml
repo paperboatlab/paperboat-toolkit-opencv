@@ -2,7 +2,7 @@
 format = 0
 name = "ocv-03-image-lab"
 version = "0.1.0"
-engine = ">=0.1"
+engine = ">=0.2"
 language = "cpp"
 run = "build/paperboat-ocv-lab"
 port = 8783
