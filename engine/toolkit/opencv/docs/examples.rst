@@ -1,7 +1,7 @@
 Examples
 ========
 
-Three complete backends ship with the toolkit, named ``ocv-NN-<topic>`` so they are easy to tell
+Three complete stations ship with the toolkit, named ``ocv-NN-<topic>`` so they are easy to tell
 apart from the numbered tutorials:
 
 .. list-table::
@@ -21,10 +21,10 @@ apart from the numbered tutorials:
      - ``resize``, ``crop``, ``equalize``, ``sobel`` and ``stats``
 
 The installer copies them next to the toolkit; the CLI lists and starts them like any other
-backend:
+station:
 
 .. code-block:: sh
 
    paperboat toolkit install opencv
-   paperboat backends
+   paperboat stations
    paperboat run ocv-01

@@ -4,7 +4,7 @@
 #            └→ Gray → Resize → Crop → Equalize → Sobel → Image view
 domain = "image-lab"
 
-import = ["dashboard", "opencv"]
+import = ["board", "opencv"]
 
 # No station bodies: open on the Flow graph.
 [station]
@@ -53,7 +53,7 @@ groups = [
   { id = "lab", kind = "visual", label = "Geometry and edges", nodes = ["gray-1", "resize-1", "crop-1", "equalize-1", "sobel-1", "view-lab"] },
 ]
 
-[dashboard]
+[board]
 columns = 8
 instruments = [
   { block = "view-raw", size = "large", at = [0, 0] },

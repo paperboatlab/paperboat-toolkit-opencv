@@ -40,7 +40,7 @@ jobs:
         run: |
           cp -r examples paperboat/engine/toolkit/opencv/
           cd paperboat
-          ./bin/paperboat backends | grep ocv-01-parts-counter
+          ./bin/paperboat stations | grep ocv-01-parts-counter
           ./bin/paperboat check --fast engine/toolkit/opencv/examples/ocv-01-parts-counter
 
   validate:

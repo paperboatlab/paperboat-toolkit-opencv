@@ -1,6 +1,6 @@
 # OpenCV toolkit examples
 
-Each folder is a complete Paperboat backend that uses the optional `opencv` package. They
+Each folder is a complete Paperboat station that uses the optional `opencv` package. They
 are named `ocv-NN-<topic>`: the `ocv` prefix keeps them apart from the numbered tutorial
 curriculum in `paperboat-examples`, and `paperboat run ocv-01` finds the first one.
 
@@ -18,4 +18,4 @@ paperboat check engine/toolkit/opencv/examples/ocv-01-parts-counter
 ```
 
 The examples are copied to `engine/toolkit/opencv/examples/` when the toolkit is installed,
-and the CLI lists them with `paperboat backends`.
+and the CLI lists them with `paperboat stations`.

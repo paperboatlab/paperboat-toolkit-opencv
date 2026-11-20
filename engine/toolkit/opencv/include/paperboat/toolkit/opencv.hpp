@@ -10,11 +10,11 @@
 //   morphology, invert, distance), image algebra (bitwise, blend, absdiff, background),
 //   analysis (centroid, contours, stats, hough_lines, hough_circles, template_match),
 //   annotation (draw) and output (save).
-// - Dashboard: Image view shows any image (a stage, a result) as an instrument.
+// - Board: Image view shows any image (a stage, a result) as an instrument.
 // - Your own blocks take an image in with image_in() and send one out with image_out(),
 //   like the parts example's counter.
 //
-// Optional: built only when OpenCV is found. A backend registers it next to the builtins
+// Optional: built only when OpenCV is found. A station registers it next to the builtins
 // and imports "opencv" in its descriptor:
 //
 //   tk::Registry r = tk::builtins();

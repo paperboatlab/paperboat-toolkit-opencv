@@ -5,7 +5,7 @@
 #                                          └→ Count readout
 domain = "parts-counter"
 
-import = ["dashboard", "opencv"]
+import = ["board", "opencv"]
 
 # No station bodies: open on the Flow graph.
 [station]
@@ -50,7 +50,7 @@ groups = [
   { id = "result", kind = "visual", label = "Count and mark", nodes = ["contours-1", "draw-1", "view-result", "display-count", "display-truth"] },
 ]
 
-[dashboard]
+[board]
 columns = 8
 instruments = [
   { block = "view-result", size = "large", at = [0, 0] },
