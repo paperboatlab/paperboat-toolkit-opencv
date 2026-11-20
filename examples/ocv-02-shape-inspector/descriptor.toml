@@ -4,7 +4,7 @@
 #                    └→ Threshold → Contours → Draw → Image view
 domain = "shape-inspector"
 
-import = ["dashboard", "opencv"]
+import = ["board", "opencv"]
 
 # No station bodies: open on the Flow graph.
 [station]
@@ -61,7 +61,7 @@ groups = [
   { id = "shapes", kind = "visual", label = "Shapes", nodes = ["threshold-1", "contours-1", "draw-box-1", "view-shapes"] },
 ]
 
-[dashboard]
+[board]
 columns = 8
 instruments = [
   { block = "view-circles", size = "large", at = [0, 0] },

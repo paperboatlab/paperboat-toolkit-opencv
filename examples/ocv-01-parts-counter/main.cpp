@@ -14,11 +14,11 @@ int main(int argc, char** argv) {
     return r;
   }();
   static const paperboat::Catalog catalog = paperboat::load_descriptor_file(PAPERBOAT_DESCRIPTOR, registry);
-  const paperboat::Backend backend{
+  const paperboat::Station station{
       .engine = "ocv-01-parts-counter",
       .catalog = &catalog,
       .view = {{"mode", "2d"}, {"center", {0, 0}}, {"height", 8.0}},
       .run = {.mode = paperboat::RunSettings::Mode::Once, .real_time = false},
   };
-  return paperboat::main(backend, argc, argv, 8781);
+  return paperboat::main(station, argc, argv, 8781);
 }

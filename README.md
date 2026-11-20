@@ -18,7 +18,7 @@ Requires the OpenCV development headers (`libopencv-dev` on Debian/Ubuntu, `open
 paperboat toolkit install opencv --repo https://github.com/paperboatlab/paperboat-toolkit-opencv.git
 ```
 
-Declare `toolkits = ["opencv"]` in `backend.toml` and import `"opencv"` in `descriptor.toml`.
+Declare `toolkits = ["opencv"]` in `station.toml` and import `"opencv"` in `descriptor.toml`.
 
 ## Build
 
